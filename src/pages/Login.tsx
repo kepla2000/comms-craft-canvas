@@ -1,11 +1,10 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
-import { EyeIcon, EyeOffIcon, GitHub, Twitter, Loader2 } from 'lucide-react';
+import { EyeIcon, EyeOffIcon, Github, Twitter, Loader2 } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
 
 const Login = () => {
@@ -147,7 +146,7 @@ const Login = () => {
 
             <div className="mt-6 grid grid-cols-2 gap-3">
               <Button variant="outline" className="w-full">
-                <GitHub className="mr-2 h-4 w-4" />
+                <Github className="mr-2 h-4 w-4" />
                 GitHub
               </Button>
               <Button variant="outline" className="w-full">
