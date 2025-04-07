@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ChevronRight } from 'lucide-react';
 
@@ -24,10 +25,12 @@ const CTASection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" className="bg-white text-cpaas-600 hover:bg-gray-100 px-8">
-                Start Free Trial
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link to="/get-started">
+                <Button size="lg" className="bg-white text-cpaas-600 hover:bg-gray-100 px-8">
+                  Start Free Trial
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10">
                 Schedule Demo
               </Button>
